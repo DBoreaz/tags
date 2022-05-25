@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link id="favicon" rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Tags</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="setting">
+            <div class="timer flex-cell">00:00</div>
+            <div class="start">
+                <button class="btn start__btn">START</button>
+            </div>
+            <div class="size-grid flex-cell">
+                <button class="btn size-grid__btn size-grid__btn-left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-left" viewBox="0 0 512 512">
+                        <path d="M184 112l144 144-144 144" />
+                    </svg></button>
+                <div class="size-grid__text">4</div>
+                <button class="btn size-grid__btn size-grid__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-right" viewBox="0 0 512 512">
+                        <path d="M184 112l144 144-144 144" />
+                    </svg></button>
+            </div>
+
+        </section>
+        <div class="string-res "><a class="string-res_link" href="#">Results</a></div>
+    </div>
+
+
+    <div class="modal msg-congrat hidden">
+        <div class="winner">
+            <div class="winner__form flex-cell hidden">
+                <input class='winner__form__input' type="text" maxlength='25' placeholder='Enter your Name' />
+                <button class='winner__form__btn btn'>Save</button>
+            </div>
+            <button class="btn modal__btn-close"><svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 512 512">
+
+                    <path d="M368 368L144 144M368 144L144 368" />
+                </svg></button>
+            <div class="winner__text flex-cell">You win!</div>
+        </div>
+    </div>
+
+    <div class="modal results hidden ">
+        <!--  <div class="wrap-result-head">-->
+        <div class="results__title flex-cell">LEADERBOARD</div>
+        <div class="results__month flex-cell">
+            <button class="btn results__month__btn-left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-left icon-res" viewBox="0 0 512 512">
+                    <path d="M184 112l144 144-144 144" />
+                </svg></button>
+            <div class='results__date flex-cell'><span class="results__date__month">December</span>&nbsp;<span class="results__date__year"> 22</span></div>
+            <button class="btn results__month__btn-right">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-right icon-res" viewBox="0 0 512 512">
+                    <path d="M184 112l144 144-144 144" />
+                </svg></button>
+        </div>
+        <button class="btn modal__btn-close"><svg xmlns="http://www.w3.org/2000/svg" class="icon-sm icon-res" viewBox="0 0 512 512">
+                <path d="M368 368L144 144M368 144L144 368" />
+            </svg></button>
+        <!--   </div>-->
+        <div class="results__grid"></div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
